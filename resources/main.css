@@ -1,0 +1,26 @@
+input[type="number"] {
+    width: 4em;
+border-radius: 0.75em;
+padding: 0.2em;
+}
+
+body {
+	color: #B3E3E7;
+	background-color: #951763;
+}
+
+h1 {
+	color: #958D56;
+	background-color: #951763;
+}
+
+.jumbotron {
+	color: #958D56;
+	background-color: #951763;
+}
+
+button {
+	color: #FFFFFF;
+	background-color: #AF6591;
+	border-radius: 0.75em;
+}

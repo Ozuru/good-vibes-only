@@ -1,0 +1,54 @@
+<html>
+<head><title>&#9925 good vibes &#9835</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="resources/main.css">
+</head>
+<body>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+<script src="resources/main.js"></script>
+
+
+<div class="jumbotron text-center">
+  <h1>good vibes</h1>
+  <p><div id="warning">
+  <script>
+  if(typeof window.orientation === 'undefined') {
+    document.write("Hmm, it looks like you're viewing this on a device that might not support vibration. Try revisiting this with your phone!");
+  }
+  </script>
+</div></p>
+</div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <button onclick="startRepeatingVibes(1000, 2000)">Long, Slow Pulse</button><br><br>
+    </div>
+    <div class="col-sm-4">
+      <button onclick="startRepeatingVibes(250, 300)">Short, Fast Pulse</button><br><br>
+    </div>
+    <div class="col-sm-4">
+    <button onclick="startCustomVibes()">Custom Pulse</button><br><br>
+    pulse length <input type="number" id="length" value="1000"><br>
+    pulse interval <input type="number" id="interval" value="2000"><br><br>      
+    </div>
+  </div>
+  <div class="row">
+  <hr>
+  <div class="col-sm-12">
+      <button onclick="stopGoodVibes()">Stop Vibrations</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
